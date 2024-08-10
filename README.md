@@ -1,12 +1,11 @@
 # Multiclicker
 Multiclicker for Linux Ubuntu 24 on Wayland
 
-by Ketaslava Ket
-and KTVINCCO Team
+# Developers
+by Ketaslava Ket and KTVINCCO Team
 
 # License
 Licensed under MIT License
-[https://opensource.org/license/mit]
 
 # About
 * Mede for Ubuntu 24 on Wayland
@@ -17,7 +16,7 @@ Licensed under MIT License
 * Compiled by g++
 
 # How it works
-* Activates automaticaly with quick clicks
+* Activates automaticaly with quick clicks (just click fast and the program will help you click even faster)
 
 # Setup
 1. In the terminal run $sudo lsinput
@@ -25,7 +24,9 @@ Licensed under MIT License
 3. Copy "USB OPTICAL MOUSE"
 4. Paste "USB OPTICAL MOUSE" in to the settings
 
-To run use "sudo sh ./run.sh" to build and run, or use "./main" when compiled
+# Run
+1. Use "sudo sh ./run.sh" to build and run, or use "./dist/main" to run instantly
 
-If there are no clicks, it is recomended to increase the delay (time) between clicks
-Only works with sudo
+# Troubleshooting
+* If there are no clicks, it is recomended to increase the delay (time) between clicks
+* The program only works when run with sudo

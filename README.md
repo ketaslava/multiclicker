@@ -27,7 +27,7 @@ Licensed under MIT License
 4. Paste "USB OPTICAL MOUSE" to the config/device_name.txt file and save it
 
 # Run
-1. Use "sudo sh ./run.sh" to build and run program. Also you can use "./dist/main" to run program instantly
+1. Use "sudo sh ./run.sh" to build and run program. Also you can use "sudo ./dist/main" to run program instantly
 
 # Troubleshooting
 * You can adjust settings in src/main.cpp file

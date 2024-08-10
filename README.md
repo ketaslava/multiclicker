@@ -30,3 +30,4 @@ Licensed under MIT License
 # Troubleshooting
 * If there are no clicks, it is recomended to increase the delay (time) between clicks
 * The program only works when run with sudo
+* To stabilize the number of clicks (to avoid periodic delays) you can use the mode "isUseOptimizedContinuationRule = true" in the Settings Trigger section in the src/main.cpp file

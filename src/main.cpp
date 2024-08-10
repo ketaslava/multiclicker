@@ -26,17 +26,17 @@
 
 
 // Log
-bool is_enable_click_logging = false; // false (May cause performance issues)
+bool isEnableClickLogging = false; // false (May cause performance issues)
 
 // Device
-bool is_read_device_name_from_file = true;
+bool isReadDeviceNameFromFile = true;
 std::string deviceName = "USB OPTICAL MOUSE";
 
 // Trigger
 int maximumTriggerTimeFor4ClicksMs = 666; // 666
 bool isUse3ClicksInsteadOf4 = false; // false
 int maximumTriggerTimeFor3ClicksMs = 500; // 500
-bool is_use_optimized_continuation_rule = true; // false (May cause input loops)
+bool isUseOptimizedContinuationRule = true; // false (May cause input loops)
 
 // Clicks
 int additionalClicksCountFrom = 8; // 8
@@ -68,7 +68,7 @@ int getRandomInt(int min, int max) {
 
 
 void clickProcessLog(std::string msg) {
-    if (is_enable_click_logging) {
+    if (isEnableClickLogging) {
         std::cout << msg << std::endl;
     }
 }
@@ -187,7 +187,7 @@ void processClick(int button_id) {
         isLastAdditionalClickEmited = false;
         // Check continue state
         clickProcessLog("CpE: " + std::to_string(clicks_per_emulation) + "ECC:" + std::to_string(emulated_clicks_count));
-        if (clicks_per_emulation == emulated_clicks_count || !is_use_optimized_continuation_rule) {
+        if (clicks_per_emulation == emulated_clicks_count || !isUseOptimizedContinuationRule) {
             return;
             clickProcessLog("STOP");
         } else {
@@ -289,7 +289,7 @@ int main() {
 
     // Read settings
 
-    if (is_read_device_name_from_file) {
+    if (isReadDeviceNameFromFile) {
         std::fstream MyReadFile("./config/device_name.txt");
         std::string txt;
         if(getline (MyReadFile, txt)) {

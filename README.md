@@ -20,11 +20,11 @@ Licensed under MIT License
 * Activates automaticaly with quick clicks (just click fast and the program will help you click even faster)
 
 # Setup
-1. Install g++ and libinput-dev. Run this command in terminal$: sudo apt-get install g++ libinput-dev
-1. Run lsinput. In the terminal run$: sudo lsinput
-2. Find the device name in list. Like (name: "USB OPTICAL MOUSE")
-3. Copy "USB OPTICAL MOUSE"
-4. Paste "USB OPTICAL MOUSE" to the config/device_name.txt file and save it
+1. Install g++, libinput-dev, input-utils. Run automatic configuration with this command$: sudo sh ./setup.sh
+2. Run lsinput. In the terminal run$: sudo lsinput
+3. Find the device name in list. Like (name: "USB OPTICAL MOUSE")
+4. Copy "USB OPTICAL MOUSE"
+5. Paste "USB OPTICAL MOUSE" to the config/device_name.txt file and save it
 
 # Run
 1. Use "sudo sh ./run.sh" to build and run program. Also you can use "sudo ./dist/main" to run program instantly

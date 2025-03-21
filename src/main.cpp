@@ -36,7 +36,7 @@ std::string deviceName = "USB OPTICAL MOUSE";
 int maximumTriggerTimeFor4ClicksMs = 666; // 666
 bool isUse3ClicksInsteadOf4 = false; // false
 int maximumTriggerTimeFor3ClicksMs = 500; // 500
-bool isUseOptimizedContinuationRule = false; // false (May cause input loops)
+bool isUseOptimizedContinuationRule = false; // false (true May cause input loops)
 
 // Clicks
 int additionalClicksCountFrom = 8; // 8

@@ -188,8 +188,8 @@ void processClick(int button_id) {
         // Check continue state
         clickProcessLog("CpE: " + std::to_string(clicks_per_emulation) + "ECC:" + std::to_string(emulated_clicks_count));
         if (clicks_per_emulation == emulated_clicks_count || !isUseOptimizedContinuationRule) {
-            return;
             clickProcessLog("STOP");
+            return;
         } else {
             clickProcessLog("CONTINUE");
         }
